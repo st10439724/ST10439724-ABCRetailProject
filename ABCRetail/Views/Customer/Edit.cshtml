@@ -1,0 +1,24 @@
+﻿@model ABCRetail.Models.CustomerEntity
+
+<h2>Edit Customer</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="RowKey" />
+    <div>
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" required />
+    </div>
+    <div>
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" required />
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" required />
+    </div>
+    <div>
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" required />
+    </div>
+    <button type="submit">Update Customer</button>
+</form>
